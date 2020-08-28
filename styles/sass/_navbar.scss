@@ -1,0 +1,51 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+  margin-bottom: 20px;
+  
+  li {
+    a {
+      position: relative;
+      color: $secondary;
+      display: inline-block;
+      padding: 30px 20px;
+      transition: 0.5s;
+      color: transparent;
+      font-weight: 800;
+      
+
+    }
+  }
+}
+
+.navbar li a:before,
+.navbar li a:after
+ {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 20px;
+  color: $pink;
+  
+
+}
+.navbar li a:before {
+  -webkit-clip-path: polygon(0 0, 100% 3%, 100% 50%, 0% 50%);
+  clip-path: polygon(0 0, 100% 3%, 100% 50%, 0% 50%);
+}
+.navbar li a:after{
+  -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0% 100%);
+}
+.navbar li a:hover:before{
+  color:$primary;
+  transform: translate(18px, -2px);
+}
+.navbar li a:hover:after {
+  color: $primary;
+  transform: translate(10px, 2px);
+}
+

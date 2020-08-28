@@ -1,0 +1,56 @@
+html{
+ scroll-behavior: smooth;
+}
+h1,
+h2,
+ul,
+p {
+  height: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Special Elite', cursive;
+}
+h1,
+h2,
+h3,
+ul {
+  color: $fourth;
+}
+h1{
+ text-shadow: 2px 2px 4px $primary;
+
+}
+p {
+  font-size: 1.2rem;
+  color: $fourth;
+  margin: 10px;
+}
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+.wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+footer {
+
+  font-family: 'Special Elite', cursive;
+}
+i {
+  color: $pink;
+  font-size: 3rem;
+}
