@@ -28,12 +28,7 @@ $(function(){
  });
 
  
-
-  
- 
- 
-
-  });
+});
   
 
 
@@ -46,15 +41,3 @@ $(function(){
 
 
 
-// $(function(){
-
-//  $('.navbar li').click(function(){
-//   speed=250;
-//   let i=$(this).index();
-//   console.log(i);
-//   $('.page.current').animate({opacity:0,marginTop:80},speed,function(){
-//    $(this).removeClass('current');
-//    $('.page').eq(i).css('marginTop',30).animate({opacity:1,marginTop:50}).addClass('current');
-//   })
-//  })
-// })

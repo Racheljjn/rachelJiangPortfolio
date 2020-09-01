@@ -1,0 +1,111 @@
+
+
+@media (max-width:960px){
+ .navbar{
+   justify-content: center;
+ }
+  
+ 
+  #skills{
+   margin: 60px auto;
+  }
+
+  .project {
+  width: calc(100% / 2 - 20px);
+}
+#work{
+  height: 60vh;
+}
+}
+
+
+
+@media (max-width:768px){
+  header{
+    margin-bottom: 50px;
+  }
+ 
+#aboutMe {
+  height: 450px;
+}
+h1{
+ font-size: 2rem;
+}
+.intro p{
+  font-size: 1.2rem;
+  width: 320px;
+}
+
+}
+
+@media (max-width:640px){
+#aboutMe {
+  height: 400px;
+}
+.intro p{
+  font-size: 1rem;
+  width: 280px;
+}
+.intro{
+  padding: 20px 10px;
+}
+
+.content{
+  flex-direction: column;
+  align-items: center;
+}
+.project{
+  width: 80%;
+}
+#work{
+  height: 100vh;
+}
+.email{
+  flex-direction: column;
+  align-items: center;
+}
+.social{
+  margin: 0;
+  align-self: center;
+}
+h1{
+  font-size: 2rem;
+}
+.navbar li a{
+  font-size: 1rem;
+  padding: 20px;
+}
+
+
+}
+@media (max-width:540px){
+  #aboutMe{
+    height: 300px;
+  }
+  .navbar li a{
+    font-size: 0.8rem;
+  }
+  .line{
+    flex-direction: column;
+   
+  }
+  .piece{
+    width: 80%;
+
+
+  }
+  .project{
+    width: 100%;
+  }
+}
+
+@media (max-width:450px){
+  
+  .intro{
+    padding: 5px;
+  }
+  .intro p{
+    width: 200px;
+    font-size: 0.8rem;
+  }
+}

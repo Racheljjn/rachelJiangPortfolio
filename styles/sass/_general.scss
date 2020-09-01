@@ -1,36 +1,49 @@
 html{
  scroll-behavior: smooth;
 }
+body{
+  background-color: $base;
+}
 h1,
 h2,
 ul,
 p {
-  height: auto;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Special Elite', cursive;
+  
 }
 h1,
 h2,
 h3,
 ul {
-  color: $fourth;
+  font-family: 'Barlow', sans-serif;
 }
 h1{
- text-shadow: 2px 2px 4px $primary;
+ color: $heading;
+ font-size: 2.5rem;
+ text-align: left;
 
+}
+img{
+  width: 250px;
 }
 p {
   font-size: 1.2rem;
-  color: $fourth;
+  color: $base;
   margin: 10px;
+  font-family: 'Balsamiq Sans', cursive;
+
 }
-h1 {
-  font-size: 2rem;
-}
+
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.5rem; 
+  color: $heading;
+  margin: 40px 0;
+}
+
+span{
+  color: $white;
 }
 .wrapper {
   width: 90%;
@@ -42,15 +55,17 @@ li {
 }
 a {
   text-decoration: none;
-  font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  font-family: 'Barlow', sans-serif;
+  color: $white;
+
 }
 
 footer {
+  font-family: 'Balsamiq Sans', cursive;
 
-  font-family: 'Special Elite', cursive;
 }
 i {
-  color: $pink;
+  color: $heading;
   font-size: 3rem;
 }
