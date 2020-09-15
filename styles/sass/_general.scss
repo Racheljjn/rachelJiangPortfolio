@@ -1,8 +1,11 @@
-html{
- scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-body{
-  background-color: $base;
+
+
+body {
+  background-color: $white;
+  overflow-x: hidden;
 }
 h1,
 h2,
@@ -11,42 +14,44 @@ p {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+  color: $base;
 }
-h1,
+
 h2,
 h3,
-ul {
-  font-family: 'Barlow', sans-serif;
-}
-h1{
- color: $heading;
- font-size: 2.5rem;
- text-align: left;
+ul,p,a,footer {
+  font-family: 'Source Sans Pro', sans-serif;
+
+
 
 }
-img{
-  width: 250px;
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
 }
+
+
+
+
 p {
   font-size: 1.2rem;
-  color: $base;
-  margin: 10px;
-  font-family: 'Balsamiq Sans', cursive;
-
+  margin-top: 20px;
 }
 
 h2 {
-  font-size: 1.5rem; 
-  color: $heading;
-  margin: 40px 0;
+  font-size: 1.5rem;
 }
 
-span{
-  color: $white;
+.title {
+  background-color: $yellow;
+  display: inline-block;
+  padding: 5px 50px;
+  border-radius: 0px 20px 0px 20px;
+  margin: 50px;
 }
 .wrapper {
-  width: 90%;
+  width: 85%;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -56,16 +61,9 @@ li {
 a {
   text-decoration: none;
   font-size: 1rem;
-  font-family: 'Barlow', sans-serif;
-  color: $white;
-
-}
-
-footer {
-  font-family: 'Balsamiq Sans', cursive;
-
+  color: $base;
 }
 i {
-  color: $heading;
+  color: $base;
   font-size: 3rem;
 }

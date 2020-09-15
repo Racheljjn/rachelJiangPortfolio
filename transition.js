@@ -11,24 +11,22 @@ $(function(){
     window.location.hash = hash;
    });
   } 
- });
-
-
-
- $(".btn").click(function () {
-  
-  $('#rightArrow').toggleClass("none")
-  $('#leftArrow').toggleClass("block")
-  $('.intro p').toggleClass("slide")
-  $("#moving h1").toggleClass("none")
-  $("#right h1").toggleClass("none")
-  $("#left").toggleClass("left")
-  $("#moving").toggleClass("left");
-  $("#right").toggleClass("left");
- });
-
- 
+ }); 
 });
+
+const ul = document.querySelector('.navbar');
+for(let i = 0; i < ul.children.length; i++){
+  ul.children[i].addEventListener('click',function(e){
+   e.preventDefault();
+   for(let i = 0; i < ul.children.length;i++){
+    ul.children[i].className=""
+   }
+   this.className="current"
+
+  })
+  ul.children[0].className="current"
+}
+
   
 
 

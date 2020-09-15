@@ -7,279 +7,164 @@
     <link rel="stylesheet" href="styles/styles.css" />
 
     <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Roboto&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet">
+
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Barlow:wght@600&display=swap"
-    rel="stylesheet">
+   
  
     <script src="https://kit.fontawesome.com/da74f251be.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+
 
     <!-- AOS library -->
-      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <!-- onload="pageLoaded()" -->
   </head>
-  <body>
-    <!-- loading page -->
-    <!-- <section id="loader">
-      <img
-        src="./assets/Pinky Pig.gif"
-        alt="a pinky pig spinning to load pages"
-      />
-      <p>LOADING...</p> -->
-    <!-- </section> -->
-    <!-- page loaded, move to main section -->
-         
-      <header>      
-         <!-- navbar-->
-          <ul class="navbar wrapper">
+  <body>      
+    <header>        
+      <!-- navbar-->
+      <div class="hero"><img src="./assets/bg.png" alt="a white background with some patterns on it"></div>
+      <div class="wrapper">
+        <nav class="shift">
+          <ul class="navbar">          
             <li><a href="#aboutMe" data-text="ABOUT ME"> ABOUT ME</a></li>
             <li><a href="#skills" data-text="SKILLS">SKILLS</a></li>
             <li><a href="#work" data-text="WORK">WORK</a></li>
-            <li><a href="#contact" data-text="CONTACT">CONTACT</a></li>
-          </ul>    
-        
-         <section class="hero wrapper">
-           <div class="leftSide">
-           <h1><span>Hello!</span> I'M Rachel</h1>
-           <div class="typewritter">
+            <li><a href="#contact" data-text="CONTACT">CONTACT</a></li>         
+          </ul>
+        </nav>
+        <!-- name -->
+        <div class="name">
+          <h1>HELLO! I'M RACHEL</h1>
+          <div class="typewritter">
             <h2>A
               <span class="txt-rotate" data-period="500"
-                data-rotate='[ "Front-End Developer.", "Web Designer.", "Foodie!"]'></span>
+                data-rotate='[ "Front-End Developer.", "Web Designer.", "Fast Learner."]'></span>
             </h2>
-           </div>
-           <p>I love building things from scratch, either via coding or cooking🎈 </p>
-           <a href="./assets/rachel-jiang-resume.pdf" download="rachel-resume">Download CV</a>
           </div>
-          <div class="rightSide">
-            <div class="circle"><p>Firebase</p></div>
-            <div class="circleTwo"><p>Ajax</p></div>
-            <div class="circleThree"><p>API</p></div>
-            <div class="circleFour">
-              <p>Git</p>
-            </div>
-          </div>
-          </section>
-        </header>
+          <a href="./assets/rachel-jiang-resume.pdf" download="rachel-resume">Download CV</a>
+        </div>
+      </div>
+    </header>
 
-        <!-- main section -->
-      
-        <!-- split screen and animation -->
-        
-          <section  id="aboutMe" class="wrapper">          
-            <!-- left part(not showing) -->
-            <div id="left">
-              <div class="intro">
-                <p>Hello everyone! My name is Rachel, a front-end developer based out of Toronto. I was born in China and I love love love Chinese food. I'm also an avid reader. My favourite book is 'The Great Gatsby'. I was working at finance industry before getting into coding bootcamp. I have the most fun when I am doing something creative, especially coding. It boosts my energy and makes me feel more alive.</p>
-              </div>
-              
-              
-            </div>
-            <!-- moving part -->
-            <div id="moving">
-              <div class="btn">
-                <i id="rightArrow" class="fa fa-arrow-right"></i>
-                <i id="leftArrow" class="fa fa-arrow-left"></i>
-              </div>
-              <h1>ABOUT</h1>           
-            </div>
-            <!-- right part -->
-            <div id="right">          
-              <h1>ME</h1>           
-            </div>                    
-          </section> 
+        <!-- main section -->        
+      <section  id="aboutMe">
+       <div class="wrapper">
+        <h1><span class="title">ABOUT ME</span></h1>
+        <div class="text">
+          <div class="rachel"><img src="./assets/rachel.jpg" alt="a photo of the developer who built the website"></div>
+          <div class="intro" data-aos="fade-right" >
+            <p>Hello everyone! My name is Rachel, a front-end developer based out of Toronto. I'm also an avid reader, a dog lover and a person of great taste who is not afraid to experiment and does not always follow what's in the recipe book.</p>
+            <p> I transitioned to front-end web development after working at financial industry for two years. From my background in
+            finance and banking risk analysis, I possess excellent communication and critical thinking skills, with a strong focus on detail and problem solving.</p>
+            <p>I am currently pursuing an opportunity to apply my front-end skills to create web applications with enaging user experience. I love how coding lets me turn creative ideas into reality. I have the most fun when I am doing something creative, especially coding. It boosts my energy and makes
+            me feel more alive.</p>
+          </div>
+        </div>
+       </div>
+      </section> 
         
         
          <!-- skills and tools -->
       <section id="skills" class="wrapper">
-        <h1>SKILLS</h1>
-        <div class="line">
-         <div class="piece">
-          <p>HTML</p>
-          <div class="container">
-            <div class="skills html">90%</div>
-          </div>
-         </div>
-         <div class="piece">
-          <p>CSS</p>
-          <div class="container">
-            <div class="skills css">80%</div>
-          </div>
-          </div>
-         </div>
-         
-        <div class="line">
-         <div class="piece">
-          <p>JavaScript</p>
-          <div class="container">
-            <div class="skills js">50%</div>
-          </div>
-         </div>
-         <div class="piece">
-          <p>jQuery</p>
-          <div class="container">
-            <div class="skills jQ">65%</div>
-          </div>
-          </div>
-         </div>
-        <div class="line">
-         <div class="piece">
-          <p>React</p>
-          <div class="container">
-            <div class="skills react">50%</div>
-          </div>
-         </div>
-         <div class="piece">
-          <p>Sass</p>
-          <div class="container">
-            <div class="skills sass">70%</div>
-          </div>
-          </div>
-         </div>        
+        <h1><span class="title">SKILLS</span></h1> 
+        <div class="icons">
+          <div class="icon"><i class="fab fa-html5"></i>
+          <p>HTML5</p></div>
+          <div class="icon"><i class="fab fa-css3-alt"></i>
+          <p>CSS3</p></div>
+          <div class="icon"><i class="fab fa-sass"></i>
+          <p>SASS</p></div>
+          <div class="icon"><i class="fab fa-js-square"></i>
+          <p>JAVASCRIPT</p></div>
+          <div class="icon"><i class="fab fa-react"></i>
+          <P>REACT</P></div>
+          <div class="icon"><i class="devicon-jquery-plain"></i>
+          <P>JQUERY</P>
+          </div>          
+          <div class="icon"><i class="fab fa-git-square"></i>
+          <P>GIT</P></div>
+          <div class="icon"><i class="fab fa-github"></i>
+          <P>GITHUB</P></div>
+          
+        </div>     
       </section>
 
-          <!--projects  -->
+         
       <section id="work" class="wrapper">
-        <h1>PROJECTS</h1>
-        <ul class="selection">
-          <a href="#" >ALL</a>
-          <a href="#">JQUERY</a>
-          <a href="#">REACT</a>
-        </ul>
-        <ul class="items">
+        <h1><span class="title">PROJECTS</span></h1>
           <!-- display all -->
-          <div class="content active">
-            <div class="project">
-              <div class="poster">
-                <img src="./assets/vendingMachine.PNG" alt="a simulated vending machine">
-              </div>
-              <div class="description">
-                <h2>VENDING MACHINE</h2>                
-                <div class="view">
+        <div class="content active">
+        <!--projects  -->
+          <div class="project" data-aos="fade-down">
+            <div class="poster">
+              <img src="./assets/vendingMachine.PNG" alt="a simulated vending machine">
+            </div>
+            <div class="description">
+              <h2>VENDING MACHINE</h2> 
+              <p>HTML | SCSS | JavaScript | JQuery</p>
+              <p>If you've ever wanted to use a vending machine during this pandemic but you're worried about the virus, you can try this simulated app, which allows you select food or drink,and once the appropriate amount of money is inserted, the vending machine would return the correct product.It would also return change if too much money is provided, or ask for more money if insufficient funds have been inserted.</p>               
+              <div class="view">
                 <li><a href="https://jianijiang.com/rachelJiangProjectThree/index.html">LIVE</a></li>
                 <li><a href="https://github.com/Racheljjn/rachelJiangProjectThree">CODE</a></li>
-                </div>
-              </div>           
+              </div>
+            </div>           
+          </div>
+          
+          <div class="project" data-aos="fade-down">
+            <div class="poster">
+              <img src="./assets/recipe.PNG" alt="a recipe generator app">
             </div>
-            
-            <div class="project">
             <div class="description">
-              <h2>RECEIPE GENERATOR</h2>          
+              <h2>RECEIPE GENERATOR</h2> 
+              <p>HTML | SCSS | JavaScript | JQuery</p>
+              <p>Enter whatever ingredients you already have in your kitchen, this recipe generator gives more than one suggestions! Try it out! and it also gives ingredient suggestions if you have no idea what to eat!</p>
               <div class="view">
               <li><a href="https://rachelserge.github.io/rachelSergeProjectFour/index.html">LIVE</a></li>
               <li><a href="https://github.com/rachelSerge/rachelSergeProjectFour">CODE</a></li>
               </div>
-            </div>
-            <div class="poster">
-              <img src="./assets/recipe.PNG" alt="a recipe generator app">
-            </div>
-            </div>
-            
-            <div class="project">
+            </div>            
+          </div>
+          
+          <!-- <div class="project">
             <div class="poster">
               <img src="./assets/review.PNG" alt="a user-reviews app">
             </div>
             <div class="description">
-              <H2>USER-REVIEWS</H2>
-              
+              <h2>USER-REVIEWS</h2>             
               <div class="view">
               <li><a href="https://Racheljjn.github.io/rachelJiangProjectFive">LIVE</a></li>
               <li><a href="https://github.com/Racheljjn/rachelJiangProjectFive/tree/master">CODE</a></li>
               </div>
-            </div>
-            
-            </div>
-      
-            <div class="project">
-            
-            <div class="description">
-              <h2>PODCAST PRIORITIZER</h2>
+            </div>            
+          </div> -->
     
+          <div class="project" data-aos="fade-down">  
+            <div class="poster">
+              <img src="./assets/podcast.PNG" alt="a podcast suggestion app">
+            </div>
+            <div class="description">
+              <h2>PODCAST PRIORITIZER</h2> 
+              <p>React | Firebase | SCSS | RESTful API</p>
+              <p>if you can't decide which podcast to listen to on your next journey, this app dedicated to helping you decide if you should walk or bike in order to get your favourite podcast episode. You can also save your podcasts once logged in using google.               
+              </p>     
               <div class="view">
               <li><a href="https://PodcastPrioritizer.github.io/podcastprioritizer">LIVE</a></li>
               <li><a href="https://github.com/PodcastPrioritizer/podcastprioritizer">CODE</a></li>
               </div>
             </div>
-            <div class="poster">
-              <img src="./assets/podcast.PNG" alt="a podcast suggestion app">
+                         
             </div>
-            
-            </div>
-
-
-          </div>
-          <!-- display jQuery -->
-          <div class="content jQuery">
-                <div class="project">
-                  <div class="poster">
-                  <img src="./assets/vendingMachine.PNG" alt="a simulated vending machine">
-                  </div>
-                  <div class="description">
-                  <h2>VENDING MACHINE</h2>
-                  
-                
-                  <div class="view">
-                    <li><a href="https://jianijiang.com/rachelJiangProjectThree/index.html">LIVE</a></li>
-                    <li><a href="https://github.com/Racheljjn/rachelJiangProjectThree">CODE</a></li>
-                  </div>
-                  </div>
-                
-                </div>
-                <!-- project two - recipe generator -->
-                <div class="project">
-                  <div class="description">
-                  <h2>RECEIPE GENERATOR</h2>
-                  
-                  <div class="view">
-                    <li><a href="https://rachelserge.github.io/rachelSergeProjectFour/index.html">LIVE</a></li>
-                    <li><a href="https://github.com/rachelSerge/rachelSergeProjectFour">CODE</a></li>
-                  </div>
-                  </div>
-                  <div class="poster">
-                  <img src="./assets/recipe.PNG" alt="a recipe generator app">
-                  </div>
-                </div>
-
-          </div>
-          <!-- display react -->
-          <div class="content React">
-          <div class="project">
-            <div class="poster">
-              <img src="./assets/review.PNG" alt="a user-reviews app">
-            </div>
-            <div class="description">
-              <h2>USER-REVIEWS</h2>
-              
-              <div class="view">
-              <li><a href="https://Racheljjn.github.io/rachelJiangProjectFive">LIVE</a></li>
-              <li><a href="https://github.com/Racheljjn/rachelJiangProjectFive/tree/master">CODE</a></li>
-              </div>
-            </div>
-            
-            </div>
-
-            <div class="project">
-            
-            <div class="description">
-              <H2>PODCAST PRIORITIZER</H2>
-              
-              <div class="view">
-              <li><a href="https://PodcastPrioritizer.github.io/podcastprioritizer">LIVE</a></li>
-              <li><a href="https://github.com/PodcastPrioritizer/podcastprioritizer">CODE</a></li>
-              </div>
-            </div>
-            <div class="poster">
-              <img src="./assets/podcast.PNG" alt="a podcast suggestion app">
-            </div>           
-            </div>
-          </div>
-          </div>
-        </ul>
+          </div>          
       </section>
+
           <!-- contact -->
           <section id="contact" class="wrapper" >
-           <h1 >GET IN TOUCH</h1>
+           <h1><span class="title">GET IN TOUCH</span></h1>
            <div class="email">
            <h2>Email: jianijiang1119@gmail.com</h2>
           <ul class="social">

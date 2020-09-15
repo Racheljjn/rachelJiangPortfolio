@@ -1,49 +1,64 @@
-.navbar {
-  display: flex;
-  justify-content: flex-end;
-  height: 10vh;
-  margin-bottom: 20px;
-  
-  li {
-    a {
-      position: relative;
-      display: inline-block;
-      padding: 30px 20px;
-      transition: 0.5s;
-      color: transparent;
-      font-weight: 800;
-  
-    }
-  }
+nav {
+  width: 80%;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+nav ul {
+  list-style: none;
+  text-align: left;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: $base;
+  font-weight: 800;
+  margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after{
+  transition: all 0.5s;
+}
+nav ul li a:hover {
+  color: $base;
 }
 
-.navbar li a:before,
-.navbar li a:after
- {
-  content: attr(data-text);
+nav.shift ul li a {
+  position: relative;
+  z-index: 1;
+}
+nav.shift ul li a:after {
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
   width: 100%;
-  padding: 30px 20px;
-  color: $white;
-  
-
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: $yellow;
+  border-radius: 10px;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
 }
-.navbar li a:before {
-  -webkit-clip-path: polygon(0 0, 100% 3%, 100% 50%, 0% 50%);
-  clip-path: polygon(0 0, 100% 3%, 100% 50%, 0% 50%);
-}
-.navbar li a:after{
-  -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0% 100%);
-  clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0% 100%);
-}
-.navbar li a:hover:before{
-  color:$heading;
-  transform: translate(18px, -2px);
-}
-.navbar li a:hover:after {
-  color: $heading;
-  transform: translate(10px, 2px);
+nav.shift ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
 }
 
+// current
+
+.current{
+  background-color: $yellow;
+  border-radius: 10px;
+}
