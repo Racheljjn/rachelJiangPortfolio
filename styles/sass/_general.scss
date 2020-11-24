@@ -2,54 +2,24 @@ html {
   scroll-behavior: smooth;
 }
 
-
-body {
-  background-color: $white;
-  overflow-x: hidden;
-}
-h1,
-h2,
-ul,
-p {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: $base;
+}
+body {
+  overflow-x: hidden;
+  background-color: $bg;
+  font-family: 'Roboto Mono', monospace;
+  color: $white;
 }
 
-h2,
-h3,
-ul,p,a,footer {
-  font-family: 'Source Sans Pro', sans-serif;
-
-
-
-}
-h1 {
-  font-size: 3rem;
-  text-align: center;
-  font-family: 'Amatic SC', cursive;
+h1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 4em;
 }
 
 
-
-
-p {
-  font-size: 1.2rem;
-  margin-top: 20px;
-}
-
-h2 {
-  font-size: 1.5rem;
-}
-
-.title {
-  background-color: $yellow;
-  display: inline-block;
-  padding: 5px 50px;
-  border-radius: 0px 20px 0px 20px;
-  margin: 50px;
-}
 .wrapper {
   width: 85%;
   max-width: 1200px;
@@ -60,10 +30,7 @@ li {
 }
 a {
   text-decoration: none;
-  font-size: 1rem;
-  color: $base;
+  cursor: pointer;
+  color:$border ;
 }
-i {
-  color: $base;
-  font-size: 3rem;
-}
+

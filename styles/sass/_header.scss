@@ -1,0 +1,217 @@
+main {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.morph-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+
+.morph {
+  width: 1200px;
+  height: 1200px;
+  transform: scaleX(2) scaleY(2)  rotate(0);
+  opacity: 0.4;
+  animation: yoyo 2s infinite alternate ;
+}
+@keyframes yoyo{
+  from{
+    transform: translateX(-10px);
+
+  }
+  to{
+    transform: translate(20px);
+    
+  }
+}
+
+
+.open {
+  position: fixed;
+  grid-area: open;
+  align-self: start;
+  justify-self: end;
+  right: 30px;
+  cursor: pointer;
+  z-index: 200;
+
+  div {   
+    position: relative;
+    z-index: 999;
+    height: 5px;
+    width: 30px;
+    margin: 5px;
+    background-color: $white;
+  }
+}
+
+.open.rotate div:nth-child(1) {
+  top: 42px;  
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.open.rotate div:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+.open.rotate div:nth-child(3) {
+  top: 18px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+
+.socials {
+  grid-area: socials;
+  align-self: start;
+  justify-self: start;
+  position: relative;
+  z-index: 100;
+  i {
+    color: $pink;
+    font-size: 1em;
+    padding: 10px;
+  }
+}
+.back {
+ z-index: 10;
+  width: 30px;
+  height: 30px;
+  display: none;
+  position: fixed;
+  grid-area: back;
+  align-self: end;
+  justify-self: end;
+  padding-left: 30px;
+  padding-right: 100px;
+  cursor: pointer;
+  padding-bottom: 150px;
+  &:hover{
+    color: $pink;
+  }
+}
+
+.content-wrapper {
+  z-index: 100;
+  padding: 1.5em;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto 4em;
+  grid-template-areas: 'socials open' 'layout layout' 'mail back';
+}
+.mail{
+  grid-area: mail;
+  transform: translateY(-70px);
+}
+
+.mail a:hover{
+  color: $white;
+}
+.layout{  
+  grid-area: layout;
+  transform: translateY(-60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.hello{
+  text-align: center;
+  width: 53%;
+ 
+}
+
+[data-animate] > span {
+  display: inline-block;
+  height: 1.2em;
+  overflow: hidden;
+}
+[data-animate] > span > span {
+  display: none;
+  animation: 3s cubic-bezier(0, 1.2, 0.1, 0.9);
+  animation-fill-mode: backwards;
+}
+[data-animate].show > span > span {
+  display: inline-block;
+}
+
+[data-animate='slideup'] > span > span {
+  animation-name: slideUp;
+}
+
+
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translate(0, 1.2em);
+  }
+}
+
+
+// hamburger menu
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 150;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-y: hidden;
+  transition: all 0.5s ease-in;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  
+}
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: $pink;
+  display: block;
+  transition: 0.3s;
+}
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
